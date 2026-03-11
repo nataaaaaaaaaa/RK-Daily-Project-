@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sistem Pelacakan Alumni</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Sistem Pelacakan Alumni</h1>
+<p>Tracer Study Alumni</p>
+</header>
+
+<div class="container">
+
+<h2>Input Data Alumni</h2>
+
+<form id="alumniForm">
+<input type="text" id="nama" placeholder="Nama Alumni" required>
+<input type="text" id="prodi" placeholder="Program Studi" required>
+<input type="number" id="tahun" placeholder="Tahun Lulus" required>
+<input type="text" id="kota" placeholder="Kota" required>
+
+<button type="submit">Simpan Alumni</button>
+</form>
+
+
+<h2>Pelacakan Alumni</h2>
+
+<button onclick="jalankanPelacakan()">Jalankan Pelacakan</button>
+
+
+<h2>Data Alumni</h2>
+
+<table>
+<thead>
+<tr>
+<th>Nama</th>
+<th>Prodi</th>
+<th>Tahun Lulus</th>
+<th>Kota</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="tabelAlumni">
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

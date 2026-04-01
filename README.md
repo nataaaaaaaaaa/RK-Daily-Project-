@@ -11,9 +11,6 @@
 # Source Code GitHub
 # https://github.com/nataaaaaaaaaa/RK-Daily-Project-.git
 
-# Publish Web
-# http://localhost:3000
-
 # Pengujian Sistem
 # Pengujian aplikasi dilakukan berdasarkan beberapa aspek kualitas perangkat lunak.
 

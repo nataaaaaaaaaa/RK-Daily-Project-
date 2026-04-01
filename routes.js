@@ -2,12 +2,6 @@ const express = require("express")
 const router = express.Router()
 
 const db = require("./db")
-
-/*
-================================
-CEK DATABASE TERHUBUNG
-================================
-*/
 router.get("/cekdb",(req,res)=>{
 
 db.query("SELECT DATABASE() as database_name",(err,result)=>{
@@ -25,11 +19,6 @@ res.json(result)
 })
 
 
-/*
-================================
-AMBIL SEMUA DATA ALUMNI
-================================
-*/
 router.get("/alumni",(req,res)=>{
 
 const sql = "SELECT * FROM alumni"
@@ -48,12 +37,6 @@ res.json(result)
 
 })
 
-
-/*
-================================
-TAMBAH DATA ALUMNI
-================================
-*/
 router.post("/alumni",(req,res)=>{
 
 const {nama, prodi, tahun, kota} = req.body
@@ -80,11 +63,6 @@ message:"Alumni berhasil ditambahkan"
 })
 
 
-/*
-================================
-JALANKAN PELACAKAN ALUMNI
-================================
-*/
 router.get("/pelacakan",(req,res)=>{
 
 const sql = "SELECT * FROM alumni"
